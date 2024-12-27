@@ -1,0 +1,14 @@
+from PIL import Image
+
+# Load the uploaded images
+file_paths = [
+    "/mnt/data/636D4D5E-9FD2-48B6-9843-45C6011AD0B7.jpeg",
+    "/mnt/data/CD88D7F2-22ED-4C22-8BBD-B67AC32B1D70.jpeg",
+    "/mnt/data/95D89B3D-2D79-4E43-8FAF-E8F23AA50A80.jpeg",
+    "/mnt/data/18B37C08-0E17-40C6-A63A-9A4FF9895F2D.jpeg",
+]
+
+images = [Image.open(file) for file in file_paths]
+
+# Display each image to verify upload success
+images[0].show()
